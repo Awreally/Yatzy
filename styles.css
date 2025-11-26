@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice {
+  --size: 80px;
+  --pip-size: 14px;
+
+  width: var(--size);
+  height: var(--size);
+  border-radius: 12px;
+  border: 2px solid #ccc;
+  background: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 8px;
+  gap: 4px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.dice:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.2);
+}
+
+.pip {
+  width: var(--pip-size);
+  height: var(--pip-size);
+  border-radius: 50%;
+  background: #000;
+  justify-self: center;
+  align-self: center;
+  opacity: 0;
+}
+
+.dice-1 .pip:nth-child(1) {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 1;
+}
+
+.dice-2 .pip:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-2 .pip:nth-child(2) {
+  grid-column: 3;
+  grid-row: 3;
+  opacity: 1;
+}
+
+.dice-3 .pip:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-3 .pip:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 1;
+}
+.dice-3 .pip:nth-child(3) {
+  grid-column: 3;
+  grid-row: 3;
+  opacity: 1;
+}
+
+.dice-4 .pip:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-4 .pip:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-4 .pip:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 1;
+}
+.dice-4 .pip:nth-child(4) {
+  grid-column: 3;
+  grid-row: 3;
+  opacity: 1;
+}
+
+.dice-5 .pip:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-5 .pip:nth-child(2) {
+  grid-column: 3;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-5 .pip:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+  opacity: 1;
+}
+.dice-5 .pip:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 1;
+}
+.dice-5 .pip:nth-child(5) {
+  grid-column: 3;
+  grid-row: 3;
+  opacity: 1;
+}
+
+.dice-6 .pip:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-6 .pip:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+  opacity: 1;
+}
+.dice-6 .pip:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+  opacity: 1;
+}
+.dice-6 .pip:nth-child(4) {
+  grid-column: 3;
+  grid-row: 1;
+  opacity: 1;
+}
+.dice-6 .pip:nth-child(5) {
+  grid-column: 3;
+  grid-row: 2;
+  opacity: 1;
+}
+.dice-6 .pip:nth-child(6) {
+  grid-column: 3;
+  grid-row: 3;
+  opacity: 1;
+}
